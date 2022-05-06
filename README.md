@@ -1,2 +1,2 @@
 # popupmenu
-popup menu open source web component
+This is a popup menu open source web component.
