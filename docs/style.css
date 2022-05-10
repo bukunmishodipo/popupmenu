@@ -1,0 +1,60 @@
+main{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(fonts/Lato-Black.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(fonts/Lato-Regular.ttf);
+}
+
+
+body{
+  background-color: rgb(214, 222, 231);
+  font-family: Lato;
+}
+
+h1, pre{
+  text-align: center;
+}
+
+h1{
+  padding-right: 4ch;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 0.5vw;
+  font-family: Lato;
+  /* text-align: center; */
+  vertical-align: top;
+  grid-template-columns: 3fr 3fr 3fr;
+  justify-content: center;
+  /* background-color: rgb(69, 32, 106); */
+  }
+
+  .code1, .code2, .code3{
+    padding-right: 80px;
+  }
+
+  #demo2, #demo1{
+    padding-left: 12ch;
+  }
+
+  .header{
+    text-align: center;
+  }
+
+  tabbed-custom-element::part(tab):hover:active {
+    background-color: #0c0d33;
+  }

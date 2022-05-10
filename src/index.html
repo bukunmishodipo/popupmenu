@@ -3,9 +3,124 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-
+  <link rel="stylesheet" href="style.css" />
+  <h1>Popup Demos</h1>
 </head>
+
 <body>
 
+  <p>Very easy pop up menu component that would be good for making contact menus as seen in the demos below.
+    
+    <br> The button value and content of the popup can both be manipulated by the user.</p>
+
+  <main>
+
+    <div class = "grid">
+
+    <div id="demo2">
+
+      <h2> Custom popup text </h2>
+
+      <x-popup>
+        <!-- <ul> -->
+          <li slot="item"><a href="https://www.instagram.com/bukunm.i/">Instagram</a></li>
+          <li slot="item"><a href="mailto: bukunmishodipo@gmail.com">Email</a></li>
+        <!-- </ul> -->
+      </x-popup> 
+
+      <div class = "code2"> 
+        <pre>
+          <code>
+            HTML: 
+
+            &lt;x-popup&gt;
+
+            &lt;li slot="item"&gt;
+
+            &lt;a href="https://www.instagram.com/bukunm.i/"&gt;Instagram&lt;/a&gt;
+
+            &lt;/li&gt;
+
+            &lt;li slot="item"&gt;
+
+            &lt;a href="mailto: bukunmishodipo@gmail.com"&gt;Email&lt;/a&gt;
+
+            &lt;/li&gt;
+
+            &lt;/x-popup&gt;
+          </code>
+        </pre>
+      </div>
+
+    </div>
+
+    <div id="demo1">
+
+      <h2> Default popup text </h2>
+
+      <x-popup>
+
+        <ul></ul>
+        <!-- <p slot = "text"> Hello </p> -->
+      </x-popup> 
+      
+      <div class="code1">
+        <pre>
+          <code>
+            HTML: 
+
+            &lt;x-popup&gt;
+
+            &lt;/x-popup&gt;
+          </code>
+        </pre>
+      </div>
+
+    </div>
+
+    <div id="demo3">
+
+      <h2> Button Title </h2>
+
+    <x-popup title = 'Contact Me'>
+        <li slot="item"><a href="https://www.instagram.com/bukunm.i/">Instagram</a></li>
+        <li slot="item"><a href="mailto: bukunmishodipo@gmail.com">Email</a></li>
+        <!-- <li slot="item">Website</li> -->
+    </x-popup> 
+
+    <div class="code3">
+
+      <pre>
+        <code>
+          HTML: 
+  
+          &lt;x-popup title = 'Contact Me'&gt;
+  
+          &lt;li slot="item"&gt;
+
+          &lt;a href="https://www.instagram.com/bukunm.i/"&gt;Instagram&lt;/a&gt;
+
+          &lt;/li&gt;
+
+          &lt;li slot="item"&gt;
+
+          &lt;a href="mailto: bukunmishodipo@gmail.com"&gt;Email&lt;/a&gt;
+
+          &lt;/li&gt;
+  
+          &lt;/x-popup&gt;
+        </code>
+      </pre>
+
+    </div>
+
+  </div>
+  </div>
+
+  </main>
+
+  <script src="popup.js" type="module"></script>
+
 </body>
+
 </html>
